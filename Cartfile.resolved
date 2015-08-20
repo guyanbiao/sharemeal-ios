@@ -1,0 +1,2 @@
+git "https://github.com/daltoniam/SwiftHTTP.git" "0.9.5"
+github "SwiftyJSON/SwiftyJSON" "2.2.0"
