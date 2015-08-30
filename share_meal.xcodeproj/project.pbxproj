@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0817AF791B418BFC001186C2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0817AF781B418BFC001186C2 /* SwiftyJSON.framework */; };
+		083DE0241B9328AC00F6D800 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083DE0231B9328AC00F6D800 /* LeftMenuViewController.swift */; };
+		083DE0261B93290500F6D800 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083DE0251B93290500F6D800 /* LeftMenuViewController.xib */; };
 		084FE7921B3FA3BA003BC837 /* CustomHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084FE7911B3FA3BA003BC837 /* CustomHTTP.swift */; };
 		084FE7941B3FA3E3003BC837 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084FE7931B3FA3E3003BC837 /* Constants.swift */; };
 		084FE7961B3FA3F0003BC837 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084FE7951B3FA3F0003BC837 /* Helper.swift */; };
 		08B189631B862D6400E721AC /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B189621B862D6400E721AC /* SlideMenuController.swift */; };
-		08B189651B862F9700E721AC /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B189641B862F9700E721AC /* LeftViewController.swift */; };
 		08B37C951B3C588E008A29DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B37C941B3C588E008A29DE /* HomeViewController.swift */; };
 		08B37C971B3C66DC008A29DE /* HomeCell .swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B37C961B3C66DC008A29DE /* HomeCell .swift */; };
 		08B37C991B3C6738008A29DE /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08B37C981B3C6738008A29DE /* HomeCell.xib */; };
@@ -52,11 +53,12 @@
 
 /* Begin PBXFileReference section */
 		0817AF781B418BFC001186C2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		083DE0231B9328AC00F6D800 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		083DE0251B93290500F6D800 /* LeftMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuViewController.xib; sourceTree = "<group>"; };
 		084FE7911B3FA3BA003BC837 /* CustomHTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHTTP.swift; sourceTree = "<group>"; };
 		084FE7931B3FA3E3003BC837 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		084FE7951B3FA3F0003BC837 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		08B189621B862D6400E721AC /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
-		08B189641B862F9700E721AC /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		08B37C941B3C588E008A29DE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		08B37C961B3C66DC008A29DE /* HomeCell .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeCell .swift"; sourceTree = "<group>"; };
 		08B37C981B3C6738008A29DE /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
@@ -125,11 +127,12 @@
 				08BE94261B289EFB00783502 /* LaunchScreen.xib */,
 				08BE941B1B289EFB00783502 /* Supporting Files */,
 				08B37C961B3C66DC008A29DE /* HomeCell .swift */,
+				08B37C981B3C6738008A29DE /* HomeCell.xib */,
 				084FE7911B3FA3BA003BC837 /* CustomHTTP.swift */,
 				084FE7931B3FA3E3003BC837 /* Constants.swift */,
 				084FE7951B3FA3F0003BC837 /* Helper.swift */,
-				08B37C981B3C6738008A29DE /* HomeCell.xib */,
-				08B189641B862F9700E721AC /* LeftViewController.swift */,
+				083DE0231B9328AC00F6D800 /* LeftMenuViewController.swift */,
+				083DE0251B93290500F6D800 /* LeftMenuViewController.xib */,
 			);
 			path = share_meal;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				08BE94231B289EFB00783502 /* Main.storyboard in Resources */,
 				08BE94281B289EFB00783502 /* LaunchScreen.xib in Resources */,
 				08B37C991B3C6738008A29DE /* HomeCell.xib in Resources */,
+				083DE0261B93290500F6D800 /* LeftMenuViewController.xib in Resources */,
 				08BE94251B289EFB00783502 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,9 +288,9 @@
 				084FE7961B3FA3F0003BC837 /* Helper.swift in Sources */,
 				08BE941E1B289EFB00783502 /* AppDelegate.swift in Sources */,
 				084FE7921B3FA3BA003BC837 /* CustomHTTP.swift in Sources */,
+				083DE0241B9328AC00F6D800 /* LeftMenuViewController.swift in Sources */,
 				08B37C951B3C588E008A29DE /* HomeViewController.swift in Sources */,
 				08B37C971B3C66DC008A29DE /* HomeCell .swift in Sources */,
-				08B189651B862F9700E721AC /* LeftViewController.swift in Sources */,
 				08B189631B862D6400E721AC /* SlideMenuController.swift in Sources */,
 				084FE7941B3FA3E3003BC837 /* Constants.swift in Sources */,
 			);

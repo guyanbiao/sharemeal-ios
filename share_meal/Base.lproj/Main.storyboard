@@ -9,7 +9,7 @@
         <!--Home View Controller-->
         <scene sceneID="AQQ-vh-H32">
             <objects>
-                <viewController id="2Op-SM-EQ3" customClass="HomeViewController" customModule="share_meal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Op-SM-EQ3" customClass="HomeViewController" customModule="share_meal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ESv-7S-PVf"/>
                         <viewControllerLayoutGuide type="bottom" id="Poj-qc-gzh"/>

@@ -9,9 +9,10 @@
 import Foundation
 import UIKit
 class HomeCell: UITableViewCell{
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var poster: UIImageView!
     
+    @IBOutlet weak var title: UILabel!
+    
+    @IBOutlet weak var poster: UIImageView!
     
     internal var aspectConstraint : NSLayoutConstraint? {
         didSet {
@@ -35,6 +36,7 @@ class HomeCell: UITableViewCell{
         
         aspectConstraint = NSLayoutConstraint(item: poster, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: poster, attribute: NSLayoutAttribute.Height, multiplier: aspect, constant: 0.0)
         
+
         poster.image = image
     }
 }

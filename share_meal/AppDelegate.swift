@@ -15,7 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var exampleViewController: HomeViewController = mainStoryboard.instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController
+        let leftViewController = LeftMenuViewController(nibName: "LeftMenuViewController", bundle: nil)
+        
+        
+        let nvc: UINavigationController = UINavigationController(rootViewController: exampleViewController)
+        
+
+        let slideMenuController = SlideMenuController(mainViewController: nvc, leftMenuViewController: leftViewController)
+
+        self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
+        
+        self.window?.rootViewController = slideMenuController
+
+        self.window?.makeKeyAndVisible()
         return true
     }
 

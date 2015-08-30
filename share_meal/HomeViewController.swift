@@ -14,15 +14,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tableView: UITableView!
     var meals: [JSON] = []
     var mycell_height: CGFloat!
-
     var prototypeCell: HomeCell!
 
-    
     override func viewDidLoad() {
-        
+        tableView.separatorColor = UIColor(red:
+            240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0,
+            alpha: 0.8)
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
-
         tableView.registerNib(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "CustomCellOne")
         self.tableView.dataSource  = self
         self.tableView.delegate  = self
@@ -46,9 +45,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let cell = tableView.dequeueReusableCellWithIdentifier("CustomCellOne", forIndexPath: indexPath) as! HomeCell
 
-        NSLog(meals[indexPath.row]["title"].stringValue)
-        cell.label.text = meals[indexPath.row]["title"].stringValue
-        cell.setPostedImage(UIImage(data: NSData(contentsOfURL: NSURL(string: "http://www.paochefang.com/wp-content/uploads/paoimage/2013/07/032013yUu.jpg")!)!)!)
+        cell.title.text = meals[indexPath.row]["title"].stringValue
+        cell.setPostedImage(UIImage(named: "1111")!)
         return cell
     }
  
