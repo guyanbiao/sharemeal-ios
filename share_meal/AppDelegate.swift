@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let nvc: UINavigationController = UINavigationController(rootViewController: exampleViewController)
         let rightViewController = RightViewController(nibName: "RightViewController", bundle: nil)
+        rightViewController.mainViewController = exampleViewController
 
         let slideMenuController = SlideMenuController(mainViewController: nvc, leftMenuViewController: rightViewController)
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080DD2C41B94AB37002875FF /* NewMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080DD2C31B94AB37002875FF /* NewMealController.swift */; };
+		080DD2C61B94AB4E002875FF /* NewMealController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 080DD2C51B94AB4E002875FF /* NewMealController.xib */; };
 		0817AF791B418BFC001186C2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0817AF781B418BFC001186C2 /* SwiftyJSON.framework */; };
 		0817B63F1B9383FA0098F8F5 /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0817B63E1B9383FA0098F8F5 /* RightViewController.xib */; };
 		0817B6411B93840E0098F8F5 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0817B6401B93840E0098F8F5 /* RightViewController.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		080DD2C31B94AB37002875FF /* NewMealController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMealController.swift; sourceTree = "<group>"; };
+		080DD2C51B94AB4E002875FF /* NewMealController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewMealController.xib; sourceTree = "<group>"; };
 		0817AF781B418BFC001186C2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		0817B63E1B9383FA0098F8F5 /* RightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightViewController.xib; sourceTree = "<group>"; };
 		0817B6401B93840E0098F8F5 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				084FE7951B3FA3F0003BC837 /* Helper.swift */,
 				0817B63E1B9383FA0098F8F5 /* RightViewController.xib */,
 				0817B6401B93840E0098F8F5 /* RightViewController.swift */,
+				080DD2C31B94AB37002875FF /* NewMealController.swift */,
+				080DD2C51B94AB4E002875FF /* NewMealController.xib */,
 			);
 			path = share_meal;
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 				08BE94231B289EFB00783502 /* Main.storyboard in Resources */,
 				08BE94281B289EFB00783502 /* LaunchScreen.xib in Resources */,
 				08B37C991B3C6738008A29DE /* HomeCell.xib in Resources */,
+				080DD2C61B94AB4E002875FF /* NewMealController.xib in Resources */,
 				0817B63F1B9383FA0098F8F5 /* RightViewController.xib in Resources */,
 				08BE94251B289EFB00783502 /* Images.xcassets in Resources */,
 			);
@@ -291,6 +298,7 @@
 				08B37C951B3C588E008A29DE /* HomeViewController.swift in Sources */,
 				08B37C971B3C66DC008A29DE /* HomeCell .swift in Sources */,
 				0817B6411B93840E0098F8F5 /* RightViewController.swift in Sources */,
+				080DD2C41B94AB37002875FF /* NewMealController.swift in Sources */,
 				08B189631B862D6400E721AC /* SlideMenuController.swift in Sources */,
 				084FE7941B3FA3E3003BC837 /* Constants.swift in Sources */,
 			);
