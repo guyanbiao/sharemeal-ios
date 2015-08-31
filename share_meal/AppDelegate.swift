@@ -21,13 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         var exampleViewController: HomeViewController = mainStoryboard.instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController
-        let leftViewController = LeftMenuViewController(nibName: "LeftMenuViewController", bundle: nil)
         
         
         let nvc: UINavigationController = UINavigationController(rootViewController: exampleViewController)
-        
+        let rightViewController = RightViewController(nibName: "RightViewController", bundle: nil)
 
-        let slideMenuController = SlideMenuController(mainViewController: nvc, leftMenuViewController: leftViewController)
+        let slideMenuController = SlideMenuController(mainViewController: nvc, leftMenuViewController: rightViewController)
 
         self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
         
