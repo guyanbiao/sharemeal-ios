@@ -45,6 +45,11 @@ class NewMealController: UIViewController,  MKMapViewDelegate, UIGestureRecogniz
     }
     
  
+    @IBAction func nextView(sender: AnyObject) {
+        CustomHTTP.POST("meals/create_location", params: ["lat": centerAnnotation.coordinate.latitude, "lng": centerAnnotation.coordinate.longitude]) { (response) -> Void in
+            NSLog(response.description)
+        }
+    }
     
    
     override func viewDidLoad() {

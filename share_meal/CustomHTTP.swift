@@ -15,7 +15,7 @@ class CustomHTTP {
     
     class func POST(url: String, params: Dictionary<String, AnyObject>, block: (HTTPResponse) -> Void){
         var request = HTTPTask()
-        var token = NSUserDefaults.standardUserDefaults().objectForKey("token") as! String
+        var token = NSUserDefaults.standardUserDefaults().objectForKey("token") as? String
         var f_params = Dictionary<String, AnyObject>()
         for (k, v) in params {
             f_params.updateValue(v, forKey: k)

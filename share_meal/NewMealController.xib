@@ -44,10 +44,24 @@
                         <constraint firstAttribute="height" constant="30" id="jJa-sk-JUD"/>
                     </constraints>
                     <state key="normal" title="确定">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="search:" destination="-1" eventType="touchUpInside" id="k8g-Ed-VOO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWb-No-KG9">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="TO9-On-LnQ"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="下一步">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextView:" destination="-1" eventType="touchUpInside" id="fXs-8A-1o5"/>
                     </connections>
                 </button>
             </subviews>
@@ -55,10 +69,13 @@
             <constraints>
                 <constraint firstItem="DNA-6c-HVp" firstAttribute="leading" secondItem="tHp-4z-aeZ" secondAttribute="leading" id="7OA-kn-Pvy"/>
                 <constraint firstAttribute="trailing" secondItem="DNA-6c-HVp" secondAttribute="trailing" id="9TQ-Gu-Pjq"/>
+                <constraint firstAttribute="bottom" secondItem="nWb-No-KG9" secondAttribute="bottom" id="GXQ-8l-OIX"/>
                 <constraint firstItem="DNA-6c-HVp" firstAttribute="top" secondItem="tHp-4z-aeZ" secondAttribute="top" id="LQU-VV-4Zc"/>
                 <constraint firstItem="etn-pU-5ir" firstAttribute="top" secondItem="DNA-6c-HVp" secondAttribute="bottom" constant="10" id="SL5-cF-Ehq"/>
                 <constraint firstAttribute="trailing" secondItem="etn-pU-5ir" secondAttribute="trailing" constant="17" id="b3O-O1-ERC"/>
+                <constraint firstItem="nWb-No-KG9" firstAttribute="leading" secondItem="tHp-4z-aeZ" secondAttribute="leading" id="bKx-Jj-8r5"/>
                 <constraint firstAttribute="trailing" secondItem="WKE-Ic-iPE" secondAttribute="trailing" id="bun-Zp-fJB"/>
+                <constraint firstAttribute="trailing" secondItem="nWb-No-KG9" secondAttribute="trailing" id="naO-rL-2fg"/>
                 <constraint firstItem="WKE-Ic-iPE" firstAttribute="top" secondItem="DNA-6c-HVp" secondAttribute="bottom" constant="10" id="pqu-MS-aIj"/>
                 <constraint firstItem="etn-pU-5ir" firstAttribute="leading" secondItem="WKE-Ic-iPE" secondAttribute="trailing" constant="20" id="quC-Ji-XgG"/>
                 <constraint firstItem="WKE-Ic-iPE" firstAttribute="leading" secondItem="tHp-4z-aeZ" secondAttribute="leading" constant="10" id="qy9-XL-1qJ"/>
