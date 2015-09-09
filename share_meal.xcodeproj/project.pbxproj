@@ -12,6 +12,9 @@
 		0817AF791B418BFC001186C2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0817AF781B418BFC001186C2 /* SwiftyJSON.framework */; };
 		0817B63F1B9383FA0098F8F5 /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0817B63E1B9383FA0098F8F5 /* RightViewController.xib */; };
 		0817B6411B93840E0098F8F5 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0817B6401B93840E0098F8F5 /* RightViewController.swift */; };
+		083393681B9673A400BB5127 /* GeotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083393671B9673A400BB5127 /* GeotificationsViewController.swift */; };
+		0833936A1B9673EC00BB5127 /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083393691B9673EC00BB5127 /* Geotification.swift */; };
+		0833936C1B96745300BB5127 /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0833936B1B96745300BB5127 /* AddGeotificationViewController.swift */; };
 		084FE7921B3FA3BA003BC837 /* CustomHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084FE7911B3FA3BA003BC837 /* CustomHTTP.swift */; };
 		084FE7941B3FA3E3003BC837 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084FE7931B3FA3E3003BC837 /* Constants.swift */; };
 		084FE7961B3FA3F0003BC837 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084FE7951B3FA3F0003BC837 /* Helper.swift */; };
@@ -59,6 +62,9 @@
 		0817AF781B418BFC001186C2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		0817B63E1B9383FA0098F8F5 /* RightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightViewController.xib; sourceTree = "<group>"; };
 		0817B6401B93840E0098F8F5 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		083393671B9673A400BB5127 /* GeotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeotificationsViewController.swift; sourceTree = "<group>"; };
+		083393691B9673EC00BB5127 /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
+		0833936B1B96745300BB5127 /* AddGeotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationViewController.swift; sourceTree = "<group>"; };
 		084FE7911B3FA3BA003BC837 /* CustomHTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHTTP.swift; sourceTree = "<group>"; };
 		084FE7931B3FA3E3003BC837 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		084FE7951B3FA3F0003BC837 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -122,6 +128,9 @@
 		08BE941A1B289EFB00783502 /* share_meal */ = {
 			isa = PBXGroup;
 			children = (
+				083393671B9673A400BB5127 /* GeotificationsViewController.swift */,
+				0833936B1B96745300BB5127 /* AddGeotificationViewController.swift */,
+				083393691B9673EC00BB5127 /* Geotification.swift */,
 				08B37C941B3C588E008A29DE /* HomeViewController.swift */,
 				08BE941D1B289EFB00783502 /* AppDelegate.swift */,
 				08BE941F1B289EFB00783502 /* ViewController.swift */,
@@ -294,12 +303,15 @@
 				08BE94201B289EFB00783502 /* ViewController.swift in Sources */,
 				084FE7961B3FA3F0003BC837 /* Helper.swift in Sources */,
 				08BE941E1B289EFB00783502 /* AppDelegate.swift in Sources */,
+				0833936A1B9673EC00BB5127 /* Geotification.swift in Sources */,
 				084FE7921B3FA3BA003BC837 /* CustomHTTP.swift in Sources */,
 				08B37C951B3C588E008A29DE /* HomeViewController.swift in Sources */,
 				08B37C971B3C66DC008A29DE /* HomeCell .swift in Sources */,
 				0817B6411B93840E0098F8F5 /* RightViewController.swift in Sources */,
 				080DD2C41B94AB37002875FF /* NewMealController.swift in Sources */,
+				0833936C1B96745300BB5127 /* AddGeotificationViewController.swift in Sources */,
 				08B189631B862D6400E721AC /* SlideMenuController.swift in Sources */,
+				083393681B9673A400BB5127 /* GeotificationsViewController.swift in Sources */,
 				084FE7941B3FA3E3003BC837 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
