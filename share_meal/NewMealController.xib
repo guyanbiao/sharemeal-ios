@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewMealController" customModule="share_meal" customModuleProvider="target">
             <connections>
+                <outlet property="mapView" destination="DNA-6c-HVp" id="kfc-Cn-Wyd"/>
                 <outlet property="view" destination="tHp-4z-aeZ" id="FOT-fC-woQ"/>
             </connections>
         </placeholder>
