@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import MapKit
+import SwiftyJSON
 import CoreLocation
 
 class NewMealController: UIViewController,  MKMapViewDelegate, UIGestureRecognizerDelegate, CLLocationManagerDelegate  {
@@ -19,37 +20,7 @@ class NewMealController: UIViewController,  MKMapViewDelegate, UIGestureRecogniz
     var centerAnnotation: MKPointAnnotation = MKPointAnnotation()
     var manager:CLLocationManager!
     
-    
-    @IBAction func search(sender: AnyObject) {
-        let geoCoder = CLGeocoder()
-        geoCoder.geocodeAddressString(inputText.text, completionHandler: { (placemarks, error) -> Void in
-            if error != nil {
-                println(error)
-                return
-            }
-            if placemarks != nil && placemarks.count > 0 {
-                let placemark = placemarks[0] as! CLPlacemark
-                let span = MKCoordinateSpanMake(0.05, 0.05)
-                let location = CLLocationCoordinate2D(
-                    latitude: placemark.location.coordinate.latitude,
-                    longitude: placemark.location.coordinate.longitude
-                )
-                let region = MKCoordinateRegion(center: location, span: span)
-                self.mapView.setRegion(region, animated: true)
-            }
-        })
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        self.view.endEditing(true)
-    }
-    
- 
-    @IBAction func nextView(sender: AnyObject) {
-        CustomHTTP.POST("meals/create_location", params: ["lat": centerAnnotation.coordinate.latitude, "lng": centerAnnotation.coordinate.longitude]) { (response) -> Void in
-            NSLog(response.description)
-        }
-    }
+
     
    
     override func viewDidLoad() {
@@ -79,6 +50,46 @@ class NewMealController: UIViewController,  MKMapViewDelegate, UIGestureRecogniz
         manager.requestAlwaysAuthorization()
         manager.startUpdatingLocation()
         
+    }
+    
+    
+    @IBAction func search(sender: AnyObject) {
+        let geoCoder = CLGeocoder()
+        geoCoder.geocodeAddressString(inputText.text, completionHandler: { (placemarks, error) -> Void in
+            if error != nil {
+                println(error)
+                return
+            }
+            if placemarks != nil && placemarks.count > 0 {
+                let placemark = placemarks[0] as! CLPlacemark
+                let span = MKCoordinateSpanMake(0.05, 0.05)
+                let location = CLLocationCoordinate2D(
+                    latitude: placemark.location.coordinate.latitude,
+                    longitude: placemark.location.coordinate.longitude
+                )
+                let region = MKCoordinateRegion(center: location, span: span)
+                self.mapView.setRegion(region, animated: true)
+            }
+        })
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+    
+    
+    @IBAction func nextView(sender: AnyObject) {
+        CustomHTTP.POST("/meals/create_location", params: ["lat": centerAnnotation.coordinate.latitude, "lng": centerAnnotation.coordinate.longitude]) { (response) -> Void in
+            let json = JSON(data: response.responseObject as! NSData)
+            let mealMoreInfoController = MealMoreInfoController(nibName: "MealMoreInfo", bundle: nil)
+            mealMoreInfoController.id = json["id"].stringValue
+            
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                self.navigationController?.pushViewController(mealMoreInfoController, animated: true)
+                return
+            }
+        }
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {

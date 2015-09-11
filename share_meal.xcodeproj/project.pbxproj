@@ -15,7 +15,11 @@
 		084FE7921B3FA3BA003BC837 /* CustomHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084FE7911B3FA3BA003BC837 /* CustomHTTP.swift */; };
 		084FE7941B3FA3E3003BC837 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084FE7931B3FA3E3003BC837 /* Constants.swift */; };
 		084FE7961B3FA3F0003BC837 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084FE7951B3FA3F0003BC837 /* Helper.swift */; };
+		0857E7BB1BA1C1B00047036A /* AddMealPictureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0857E7BA1BA1C1B00047036A /* AddMealPictureController.swift */; };
+		0857E7BD1BA1C2930047036A /* AddMealPicture.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0857E7BC1BA1C2930047036A /* AddMealPicture.xib */; };
 		08984D111BA08ADA00263556 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08984D101BA08ADA00263556 /* CoreLocation.framework */; };
+		08984D131BA0A11700263556 /* MealMoreInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08984D121BA0A11700263556 /* MealMoreInfoController.swift */; };
+		08984D151BA0A30B00263556 /* MealMoreInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08984D141BA0A30B00263556 /* MealMoreInfo.xib */; };
 		08B189631B862D6400E721AC /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B189621B862D6400E721AC /* SlideMenuController.swift */; };
 		08B37C951B3C588E008A29DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B37C941B3C588E008A29DE /* HomeViewController.swift */; };
 		08B37C971B3C66DC008A29DE /* HomeCell .swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B37C961B3C66DC008A29DE /* HomeCell .swift */; };
@@ -63,7 +67,11 @@
 		084FE7911B3FA3BA003BC837 /* CustomHTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHTTP.swift; sourceTree = "<group>"; };
 		084FE7931B3FA3E3003BC837 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		084FE7951B3FA3F0003BC837 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0857E7BA1BA1C1B00047036A /* AddMealPictureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMealPictureController.swift; sourceTree = "<group>"; };
+		0857E7BC1BA1C2930047036A /* AddMealPicture.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMealPicture.xib; sourceTree = "<group>"; };
 		08984D101BA08ADA00263556 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		08984D121BA0A11700263556 /* MealMoreInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealMoreInfoController.swift; sourceTree = "<group>"; };
+		08984D141BA0A30B00263556 /* MealMoreInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealMoreInfo.xib; sourceTree = "<group>"; };
 		08B189621B862D6400E721AC /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
 		08B37C941B3C588E008A29DE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		08B37C961B3C66DC008A29DE /* HomeCell .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeCell .swift"; sourceTree = "<group>"; };
@@ -102,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0857E7B91BA1C1510047036A /* CreateNewMeal */ = {
+			isa = PBXGroup;
+			children = (
+				0857E7BA1BA1C1B00047036A /* AddMealPictureController.swift */,
+				0857E7BC1BA1C2930047036A /* AddMealPicture.xib */,
+			);
+			name = CreateNewMeal;
+			sourceTree = "<group>";
+		};
 		08BE940F1B289EFB00783502 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +143,7 @@
 		08BE941A1B289EFB00783502 /* share_meal */ = {
 			isa = PBXGroup;
 			children = (
+				0857E7B91BA1C1510047036A /* CreateNewMeal */,
 				08B37C941B3C588E008A29DE /* HomeViewController.swift */,
 				08BE941D1B289EFB00783502 /* AppDelegate.swift */,
 				08BE941F1B289EFB00783502 /* ViewController.swift */,
@@ -143,6 +161,8 @@
 				0817B6401B93840E0098F8F5 /* RightViewController.swift */,
 				080DD2C31B94AB37002875FF /* NewMealController.swift */,
 				080DD2C51B94AB4E002875FF /* NewMealController.xib */,
+				08984D121BA0A11700263556 /* MealMoreInfoController.swift */,
+				08984D141BA0A30B00263556 /* MealMoreInfo.xib */,
 			);
 			path = share_meal;
 			sourceTree = "<group>";
@@ -256,7 +276,9 @@
 			files = (
 				08BE94231B289EFB00783502 /* Main.storyboard in Resources */,
 				08BE94281B289EFB00783502 /* LaunchScreen.xib in Resources */,
+				08984D151BA0A30B00263556 /* MealMoreInfo.xib in Resources */,
 				08B37C991B3C6738008A29DE /* HomeCell.xib in Resources */,
+				0857E7BD1BA1C2930047036A /* AddMealPicture.xib in Resources */,
 				080DD2C61B94AB4E002875FF /* NewMealController.xib in Resources */,
 				0817B63F1B9383FA0098F8F5 /* RightViewController.xib in Resources */,
 				08BE94251B289EFB00783502 /* Images.xcassets in Resources */,
@@ -299,6 +321,8 @@
 				084FE7961B3FA3F0003BC837 /* Helper.swift in Sources */,
 				08BE941E1B289EFB00783502 /* AppDelegate.swift in Sources */,
 				084FE7921B3FA3BA003BC837 /* CustomHTTP.swift in Sources */,
+				08984D131BA0A11700263556 /* MealMoreInfoController.swift in Sources */,
+				0857E7BB1BA1C1B00047036A /* AddMealPictureController.swift in Sources */,
 				08B37C951B3C588E008A29DE /* HomeViewController.swift in Sources */,
 				08B37C971B3C66DC008A29DE /* HomeCell .swift in Sources */,
 				0817B6411B93840E0098F8F5 /* RightViewController.swift in Sources */,
