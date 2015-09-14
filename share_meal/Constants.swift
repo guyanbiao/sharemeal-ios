@@ -6,5 +6,5 @@
 //  Copyright (c) 2015年 neal. All rights reserved.
 //
 
-let Server_url = "http://localhost/api"
+let Server_url = "http://192.168.1.106/api"
 let Main_color = Helper.colorWithHexString("#FA858E")
